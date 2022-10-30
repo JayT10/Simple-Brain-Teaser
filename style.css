@@ -1,0 +1,82 @@
+ body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: cadetblue;
+    font-family: cursive;
+ }
+
+/* === Form Page === */
+ .form{
+    width: 37%;
+    background-color: azure;
+    padding: 20px ;
+    border-radius: 15px;
+    margin: 7px;
+ }
+
+ .input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    border: solid 2px black;
+    color: black;
+    outline: none;
+}
+
+.input::placeholder{
+    color: darkgrey;
+    font-family: cursive;
+}
+
+.btn{
+    background-color: grey;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.8);
+}
+
+/* === Right and Wrong === */
+#right {
+  color: DarkOliveGreen;
+  text-align: right;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#wrong {
+  color: brown;
+  text-align: right;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Media Queries === */
+@media  only screen and (max-width: 900px) {
+  .form {
+    width: 70%;
+  }
+}
+@media  only screen and (max-width: 640px) {
+  .form {
+    width: 90%;
+  }
+}
